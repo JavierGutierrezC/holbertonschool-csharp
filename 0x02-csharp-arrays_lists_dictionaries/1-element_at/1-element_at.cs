@@ -6,7 +6,7 @@
         {
             if (index < 0 || index >= array.Length)
             {
-                Console.WriteLine("Idex out of range");
+                Console.WriteLine("Index out of range");
                 return(-1);
             }
             else

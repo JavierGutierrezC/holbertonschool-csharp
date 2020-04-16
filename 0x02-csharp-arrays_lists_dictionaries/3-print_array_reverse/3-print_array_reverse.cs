@@ -5,7 +5,7 @@
     {
         public static void Reverse(int[] array)
         {
-            if (array == null || array.Length == 0)
+            if (array == null)
             { 
                 Console.WriteLine();
             }
@@ -16,8 +16,13 @@
                 for (int x = arrayLength; x >= 0; x--)
                 { 
                     Console.Write(array[x]);
-                    Console.Write(space);
+                    //Console.Write(space);
+                    if(!(x == 0))
+                    {
+                      Console.Write(space);  
+                    }
                 }
+                Console.WriteLine();
             }
         }
     }

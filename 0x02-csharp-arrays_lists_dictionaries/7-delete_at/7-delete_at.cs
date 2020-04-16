@@ -12,10 +12,10 @@ using System.Collections.Generic;
             }
             else
             {
-                myList.Remove(index);
+                myList.Remove(myList[index]);
                 //Console.WriteLine(index);
-                return(myList);
+                //return(myList);
             }   
-            //return(myList);
+            return(myList);
         }
     }

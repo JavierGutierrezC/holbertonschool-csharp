@@ -16,7 +16,7 @@ using System.Collections.Generic;
                 }
             if(aStack.Contains(search))
                 {
-                    Console.WriteLine("Stack contains {0}: True", search);
+                    Console.WriteLine("Stack contains \"{0}\": True", search);
                     while(aStack.Peek() != search)
                     aStack.Pop();
                     if(aStack.Peek() == search)
@@ -26,7 +26,7 @@ using System.Collections.Generic;
                 }
             else
                 {
-                    Console.WriteLine("Stack contains {0}: False", search);
+                    Console.WriteLine("Stack contains \"{0}\": False", search);
                 }
             aStack.Push(newItem);
             return(aStack);

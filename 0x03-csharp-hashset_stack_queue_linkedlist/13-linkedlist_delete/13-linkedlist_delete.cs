@@ -8,7 +8,7 @@ using System.Collections.Generic;
             
             LinkedListNode<int> act = myLList.First;
           
-            if(act == null || myLList.Count <= index)
+            if(act == null || myLList.Count <= index || index < 0)
             {
                 return;
             }

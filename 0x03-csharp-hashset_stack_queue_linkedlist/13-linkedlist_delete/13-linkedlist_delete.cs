@@ -8,13 +8,19 @@ using System.Collections.Generic;
             
             LinkedListNode<int> act = myLList.First;
           
-        
-            for(int x = 0; x < index; x++) 
+            if(act == null || myLList.Count <= index)
             {
-                //Console.WriteLine("indice {0}", x); 
-                //Console.WriteLine("indice.val1 {0}", act.Value);  
-                act = act.Next;
-                //Console.WriteLine("indice.val2 {0}", act.Value);
+                return;
+            }
+            else
+            {
+                for(int x = 0; x < index; x++) 
+                {
+                    //Console.WriteLine("indice {0}", x); 
+                    //Console.WriteLine("indice.val1 {0}", act.Value);  
+                    act = act.Next;
+                    //Console.WriteLine("indice.val2 {0}", act.Value);
+                }
             }
             myLList.Remove(act);
             

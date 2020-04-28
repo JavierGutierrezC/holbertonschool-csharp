@@ -16,7 +16,7 @@ using System.Collections.Generic;
                 else
                 {
                     return(myLList.AddBefore(act, n));
-                    break;
+                    //break;
                 }   
             }
             return(myLList.AddLast(n));  

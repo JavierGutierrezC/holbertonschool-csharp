@@ -4,7 +4,7 @@
     {
         public static void Throw()
         {
-            throw new ArrayTypeMismatchException("Wrong type");
+            throw new ArrayTypeMismatchException();
         }
     }
 

@@ -3,17 +3,16 @@
 namespace Enemies
 {
     ///<summary>Zombie class</summary>
-    class Zombie
+    public class Zombie
     {
         ///<summary>health public field</summary>
         public int health;
-        ///<summary>Zombie public constructor<see cref="Zombie"/></summary>
+        ///<summary>Zombie public constructor</summary>
         public Zombie()
         {
             health = 0;
         }
-        ///<summary>Zombie public constructor that accepts a value <see cref="Zombie"/>
-        ///class and takes <paramref name="value"/></summary>
+        ///<summary>Zombie public constructor that accepts a value</summary>
         public Zombie(int value)
         {
             

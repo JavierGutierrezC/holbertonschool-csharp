@@ -12,7 +12,8 @@ namespace Enemies
         {
             health = 0;
         }
-        ///<summary>Zombie public constructor that accepts a value</summary>
+        ///<summary>Zombie public constructor that accepts a value
+        ///class and takes <paramref name="value"/></summary>
         public Zombie(int value)
         {
             

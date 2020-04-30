@@ -26,7 +26,7 @@ namespace Enemies
             }
         }
         ///<summary>Private field</summary>
-        private string name = "No name";
+        private string name = "(No name)";
         ///<summary>Public property Name</summary>
         public string Name
         {

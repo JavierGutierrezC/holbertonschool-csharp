@@ -16,7 +16,7 @@ namespace Text.Tests
 		}
 
         [Test]
-		public void 3LetterP()
+		public void threeLetterPali()
 		{
 			string s = "aba";
 
@@ -26,7 +26,7 @@ namespace Text.Tests
 		}
 
 		[Test]
-		public void 3LetternotP()
+		public void threeLetternotPali()
 		{
 			string s = "esve";
 

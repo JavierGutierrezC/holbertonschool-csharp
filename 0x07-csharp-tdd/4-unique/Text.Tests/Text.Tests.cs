@@ -53,9 +53,13 @@ namespace Text.Tests
 			Assert.AreEqual(-1, result);
 		}
 		[Test]
-        public void First_Test()
+        public void midUnique()
         {
-            Assert.Pass();
+            string s = "holaphola";
+
+			int result = Str.UniqueChar(s);
+
+			Assert.AreEqual(4, result);
         }
     }
 }

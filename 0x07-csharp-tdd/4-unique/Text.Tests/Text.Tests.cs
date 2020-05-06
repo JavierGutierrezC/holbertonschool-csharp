@@ -52,5 +52,10 @@ namespace Text.Tests
 
 			Assert.AreEqual(-1, result);
 		}
+		[Test]
+        public void First_Test()
+        {
+            Assert.Pass();
+        }
     }
 }

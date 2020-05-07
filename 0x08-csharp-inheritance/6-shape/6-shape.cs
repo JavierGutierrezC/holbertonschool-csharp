@@ -10,7 +10,7 @@
             throw new NotImplementedException("Area() is not implemented");       
         }
     }
-
+    ///<summary>Rectangle Subclass of Shape</summary>       
     class Rectangle : Shape
     {
         private int width;

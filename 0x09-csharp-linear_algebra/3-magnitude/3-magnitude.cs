@@ -16,7 +16,7 @@
             if (vector.Length == 3)
             {
                 double three = (Math.Sqrt(Math.Pow(vector[0], 2) + Math.Pow(vector[1], 2) + Math.Pow(vector[2], 2)));       
-                return (Math.Round(three,2));
+                return (Math.Round(three, 2));
             }
             else
             {

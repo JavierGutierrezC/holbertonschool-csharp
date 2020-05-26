@@ -5,7 +5,7 @@
     {
         
         ///<summary>adds two vectors and returns the resulting vector</summary>
-        ///<return>length or -1</return>
+        ///<return>new vector with result</return>
         public static double[] Add(double[] vector1, double[] vector2)
         {
             if (vector1.Length == 2 && vector2.Length == 2 )

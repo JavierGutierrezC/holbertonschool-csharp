@@ -7,14 +7,14 @@
         ///<return>new vector with result</return>
         public static double[] Multiply(double[] vector, double scalar)
         {
-            if (vector.Length == 2 && vector.Length == 2 )
+            if (vector.Length == 2)
             {
                 double[] two = new double[] {0, 0};
                 two[0] = vector[0] * scalar;
                 two[1] = vector[1] * scalar;
                 return (two);
             }
-            if (vector.Length == 3 && vector.Length == 3)
+            if (vector.Length == 3)
             {
                 double[] three = new double[] {0, 0, 0};
                 three[0] = vector[0] * scalar;

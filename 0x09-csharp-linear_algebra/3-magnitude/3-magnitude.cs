@@ -5,6 +5,7 @@
     {
         
         ///<summary>returns the length of a given vector</summary>
+        ///<return>length or -1</return>
         public static double Magnitude(double[] vector)
         {
             if (vector.Length == 2)

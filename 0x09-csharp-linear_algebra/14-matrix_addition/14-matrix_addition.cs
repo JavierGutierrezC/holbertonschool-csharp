@@ -7,7 +7,8 @@
         ///<return>returns the resulting matrix</return>
         public static double[,] Add(double[,] matrix1, double[,] matrix2)
         {
-            if (matrix1.GetLength(0) == 2 && matrix2.GetLength(0) == 2 && matrix1.GetLength(1) == 2 && matrix2.GetLength(1) == 2)
+            if (matrix1.GetLength(0) == 2 && matrix2.GetLength(1) == 2 && 
+            matrix1.GetLength(0) == 2 && matrix2.GetLength(1) == 2)
             {
                 double[,] ans= {
                     {0, 0},
@@ -19,7 +20,8 @@
                 ans[1, 1] = matrix1[1, 1] + matrix2[0, 1];
                 return (ans);
             }
-            if (matrix1.GetLength(0) == 3 && matrix2.GetLength(0) == 3 && matrix1.GetLength(1) == 3 && matrix2.GetLength(1) == 3)
+            if (matrix1.GetLength(0) == 3 && matrix2.GetLength(1) == 3 && 
+            matrix1.GetLength(0) == 3 && matrix2.GetLength(1) == 3)
             {
                 double[,] ans= {
                     {0, 0, 0},

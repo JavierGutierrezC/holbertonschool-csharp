@@ -17,7 +17,7 @@
                 ans[0, 0] = matrix1[0, 0] + matrix2[0, 0];
                 ans[0, 1] = matrix1[0, 1] + matrix2[0, 1];
                 ans[1, 0] = matrix1[1, 0] + matrix2[1, 0];
-                ans[1, 1] = matrix1[1, 1] + matrix2[0, 1];
+                ans[1, 1] = matrix1[1, 1] + matrix2[1, 1];
                 return (ans);
             }
             if (matrix1.GetLength(0) == 3 && matrix2.GetLength(0) == 3 && 

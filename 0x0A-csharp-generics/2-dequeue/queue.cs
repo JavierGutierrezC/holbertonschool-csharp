@@ -34,6 +34,7 @@
             tail = node;
             count ++;
         }
+        /// <summary>removes the first node</summary>
         public T Dequeue()
         {
             if (head == null)

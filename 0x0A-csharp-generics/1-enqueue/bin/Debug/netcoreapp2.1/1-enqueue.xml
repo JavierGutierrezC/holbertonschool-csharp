@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>1-enqueue</name>
+    </assembly>
+    <members>
+        <member name="T:Queue`1">
+            <summary>Queue Generic class </summary>
+        </member>
+        <member name="M:Queue`1.CheckType">
+            <summary>returns type of the object</summary>
+        </member>
+    </members>
+</doc>

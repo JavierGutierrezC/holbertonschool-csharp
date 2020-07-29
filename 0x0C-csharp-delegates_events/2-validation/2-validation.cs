@@ -1,5 +1,9 @@
 ﻿using System;
 
+
+/// <summary>Delegate takes float as param</summary>
+public delegate void CalculateHealth(float dam);
+
 /// <summary>Class Player</summary>
 public class Player
 {
@@ -32,28 +36,41 @@ public class Player
         //Console.WriteLine("rtyrrete");
         Console.WriteLine(this.name + " has " + this.hp + "/ " + this.maxHp + " health.");
     }
-    /// <summary>Delegate takes float as param</summary>
-    public delegate void CalculateHealth(float dam);
 
     /// <summary>Take damage method. Affect hp</summary>
     public void TakeDamage(float damage)
     {
+        float newHp = this.hp;
         Console.WriteLine(this.name + " takes " + damage + " damage!");
+        //Console.WriteLine("newhp " + newHp);
+        //Console.WriteLine("damage " + damage);
         if (damage < 0f)
-            damage = 0f;
-            this.hp = this.hp - damage;
-        //Console.WriteLine(this.name + " takes 0 damage!");
-
+            damage = 0f;     
+        newHp = newHp - damage;
+        //Console.WriteLine("newHpafterdmg " + newHp);
+            ValidateHP(newHp);
     }
 
     /// <summary>Heal damage method. Affect hp</summary>
     public void HealDamage(float heal)
     {
+        float newHp = this.hp;
         Console.WriteLine(this.name + " heals " + heal + " HP!"); 
-        if (heal < 0)
+        if (heal < 0f)
             heal = 0f;
-            this.hp = this.hp + heal;
-        //Console.WriteLine(this.name + " heals 0 damage!");
-    }    
+        newHp = newHp + heal;
+            ValidateHP(newHp);
+    }  
+
+    /// <summary>Sets new value of players hp</summary>
+    public void ValidateHP(float newHp)
+    {
+        if (newHp < 0f)
+            this.hp = 0f;
+        if (newHp > this.maxHp)
+            this.hp = maxHp;
+        else
+            this.hp = newHp;
+    }
 
 }

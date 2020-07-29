@@ -20,10 +20,13 @@ public class Player
         }
         else
         {
-            this.maxHp = maxHp;      
-        }
+            this.maxHp = maxHp;
+            //Console.WriteLine("else maxhp " + this.maxHp);
+        }     
         this.name = name;
-        this.hp = maxHp;
+        this.hp = this.maxHp; 
+        // Console.WriteLine("out maxhp " + this.maxHp);
+        // Console.WriteLine("out hp " + this.hp);
     }
 
     /// <summary>Print Health Method</summary>

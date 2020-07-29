@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>1-damage_delegation</name>
+    </assembly>
+    <members>
+        <member name="T:Player">
+            <summary>Class Player</summary>
+        </member>
+        <member name="F:Player.name">
+            <summary>Class Constructor</summary>
+        </member>
+        <member name="M:Player.#ctor(System.String,System.Single)">
+            <summary>Constructor prototype, assign defaul parameters</summary>
+        </member>
+        <member name="M:Player.PrintHealth">
+            <summary>Print Health Method</summary>
+        </member>
+        <member name="T:Player.CalculateHealth">
+            <summary>Delegate takes float as param</summary>
+        </member>
+        <member name="M:Player.TakeDamage(System.Single)">
+            <summary>Take damage method. Affect hp</summary>
+        </member>
+        <member name="M:Player.HealDamage(System.Single)">
+            <summary>Heal damage method. Affect hp</summary>
+        </member>
+    </members>
+</doc>

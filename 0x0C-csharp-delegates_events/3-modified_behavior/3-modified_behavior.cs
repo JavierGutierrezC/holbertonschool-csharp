@@ -10,6 +10,9 @@ public enum Modifier
     Strong
 }
 
+/// <summary>Delegate takes float and the enum modifiers as param</summary>
+public delegate float CalculateModifier(float baseValue, Modifier modifier);
+
 /// <summary>Class Player</summary>
 public class Player
 {
@@ -77,6 +80,7 @@ public class Player
             this.hp = newHp;
     }
 
+    /// <summary>method that modifeis the basevalue</summary>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
         if (modifier == Modifier.Weak)
@@ -93,6 +97,3 @@ public class Player
         }
     }
 }
-
-/// <summary>Delegate takes float and the enum modifiers as param</summary>
-public delegate float CalculateModifier(float baseValue, Modifier modifier);

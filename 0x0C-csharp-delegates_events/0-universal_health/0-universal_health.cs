@@ -11,7 +11,7 @@ public class Player
     /// <summary>Constructor prototype, assign defaul parameters</summary>
     public Player(string name = "Player", float maxHp = 100f)
     {
-        
+        this.name = name;
         if (maxHp <= 0f)
         {
             this.maxHp = 100f;
@@ -21,7 +21,6 @@ public class Player
         {
             this.maxHp = maxHp;      
         }
-        this.name = name;
         this.hp = maxHp;
         
     }
@@ -30,6 +29,7 @@ public class Player
     public void PrintHealth()
     {
         //Console.WriteLine("rtyrrete");
-       Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health");
+       //Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health");
+       Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
     }
 }

@@ -24,42 +24,40 @@ public class Player
         }
         else
         {
-            this.name = name;
-            this.maxHp = maxHp;
-            this.hp = maxHp;
+            this.maxHp = maxHp;      
         }
+        this.name = name;
+        this.hp = maxHp;
     }
 
     /// <summary>Print Health Method</summary>
     public void PrintHealth()
     {
         //Console.WriteLine("rtyrrete");
-        Console.WriteLine(this.name + " has " + this.hp + "/ " + this.maxHp + " health.");
+        Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health.");
     }
 
     /// <summary>Take damage method. Affect hp</summary>
     public void TakeDamage(float damage)
     {
         float newHp = this.hp;
-        Console.WriteLine(this.name + " takes " + damage + " damage!");
-        //Console.WriteLine("newhp " + newHp);
-        //Console.WriteLine("damage " + damage);
         if (damage < 0f)
-            damage = 0f;     
+            damage = 0f;
+            //Console.WriteLine("damage " + damage);
+        Console.WriteLine(this.name + " takes " + damage + " damage!");
         newHp = newHp - damage;
-        //Console.WriteLine("newHpafterdmg " + newHp);
-            ValidateHP(newHp);
+        ValidateHP(newHp);
     }
 
     /// <summary>Heal damage method. Affect hp</summary>
     public void HealDamage(float heal)
     {
         float newHp = this.hp;
-        Console.WriteLine(this.name + " heals " + heal + " HP!"); 
-        if (heal < 0f)
+        if (heal < 0)
             heal = 0f;
+        Console.WriteLine(this.name + " heals " + heal + " HP!");
         newHp = newHp + heal;
-            ValidateHP(newHp);
+        ValidateHP(newHp);
     }  
     
     /// <summary>Delegate takes float as param</summary>

@@ -39,7 +39,7 @@ public class Player
         this.name = name;
         this.hp = maxHp;
         this.status = this.name + "is ready to go!";
-        HPCheck += CheckStatus;
+        HPCheck = HPCheck + CheckStatus;
     }
 
     /// <summary>Print Health Method</summary>

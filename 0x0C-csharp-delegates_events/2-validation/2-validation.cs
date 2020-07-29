@@ -61,6 +61,9 @@ public class Player
         newHp = newHp + heal;
             ValidateHP(newHp);
     }  
+    
+    /// <summary>Delegate takes float as param</summary>
+    public delegate void CalculateHealth(float dam);
 
     /// <summary>Sets new value of players hp</summary>
     public void ValidateHP(float newHp)

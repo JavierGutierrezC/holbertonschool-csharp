@@ -11,7 +11,8 @@ public class Player
     /// <summary>Constructor prototype, assign defaul parameters</summary>
     public Player(string name = "Player", float maxHp = 100f)
     {
-        
+        this.name = name;
+        this.hp = maxHp;
         if (maxHp <= 0f)
         {
             this.maxHp = 100f;
@@ -19,10 +20,9 @@ public class Player
         }
         else
         {
-            this.name = name;
-            this.maxHp = maxHp;
-            this.hp = maxHp;
+            this.maxHp = maxHp;      
         }
+        
     }
 
     /// <summary>Print Health Method</summary>

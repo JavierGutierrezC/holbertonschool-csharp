@@ -2,8 +2,11 @@
 
 public enum Modifier
 {
+    /// <summary>Waek attack</summary>
     Weak,
+    /// <summary>Base attack</summary>
     Base,
+    /// <summary>Strong attack</summary>
     Strong
 }
 

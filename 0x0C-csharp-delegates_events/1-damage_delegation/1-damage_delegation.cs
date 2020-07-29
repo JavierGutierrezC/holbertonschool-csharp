@@ -41,22 +41,20 @@ public class Player
     /// <summary>Take damage method. Affect hp</summary>
     public void TakeDamage(float damage)
     {
-        Console.WriteLine(this.name + " takes " + damage + " damage!");
         if (damage < 0f)
             damage = 0f;
+            //Console.WriteLine("damage " + damage);
+            Console.WriteLine(this.name + " takes " + damage + " damage!");
             this.hp = this.hp - damage;
-        //Console.WriteLine(this.name + " takes 0 damage!");
-
     }
 
     /// <summary>Heal damage method. Affect hp</summary>
     public void HealDamage(float heal)
     {
-        Console.WriteLine(this.name + " heals " + heal + " HP!"); 
         if (heal < 0)
             heal = 0f;
+            Console.WriteLine(this.name + " heals " + heal + " HP!");
             this.hp = this.hp + heal;
-        //Console.WriteLine(this.name + " heals 0 damage!");
     }    
 
 }

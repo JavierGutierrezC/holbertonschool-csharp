@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>0-universal_health</name>
+    </assembly>
+    <members>
+        <member name="T:Player">
+            <summary>Class Player</summary>
+        </member>
+        <member name="F:Player.name">
+            <summary>Class Constructor</summary>
+        </member>
+        <member name="M:Player.#ctor(System.String,System.Single)">
+            <summary>Constructor prototype, assign defaul parameters</summary>
+        </member>
+        <member name="M:Player.PrintHealth">
+            <summary>Print Health Method</summary>
+        </member>
+    </members>
+</doc>

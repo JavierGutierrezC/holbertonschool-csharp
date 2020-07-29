@@ -11,8 +11,7 @@ public class Player
     /// <summary>Constructor prototype, assign defaul parameters</summary>
     public Player(string name = "Player", float maxHp = 100f)
     {
-        this.name = name;
-        this.hp = maxHp;
+        
         if (maxHp <= 0f)
         {
             this.maxHp = 100f;
@@ -22,6 +21,8 @@ public class Player
         {
             this.maxHp = maxHp;      
         }
+        this.name = name;
+        this.hp = maxHp;
         
     }
 

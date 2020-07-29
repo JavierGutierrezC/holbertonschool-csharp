@@ -68,8 +68,8 @@ public class Player
     {
         if (newHp < 0f)
             this.hp = 0f;
-        if (newHp > this.maxHp)
-            this.hp = maxHp;
+        else if (newHp > this.maxHp)
+            this.hp = this.maxHp;
         else
             this.hp = newHp;
     }

@@ -34,7 +34,7 @@ public class Player
     public void PrintHealth()
     {
         //Console.WriteLine("rtyrrete");
-        Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health.");
+        Console.WriteLine(this.name + " has " + this.hp + " / " + this.maxHp + " health");
     }
 
     /// <summary>Take damage method. Affect hp</summary>

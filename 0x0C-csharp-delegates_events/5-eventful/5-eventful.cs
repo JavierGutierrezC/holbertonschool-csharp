@@ -39,7 +39,7 @@ public class Player
         this.name = name;
         this.hp = maxHp;
         this.status = this.name + "is ready to go!";
-        HPCheck += CheckStatus;
+        HPCheck = HPCheck + CheckStatus;
     }
 
     /// <summary>Print Health Method</summary>
@@ -128,7 +128,7 @@ public class Player
     }
     private void HPValueWarning(object sender, CurrentHPArgs e)
     {
-        if (e.currentHp == 0);
+        if (e.currentHp == 0)
         {
             Console.WriteLine("Health has reached zero!");
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 
+/// <summary>Enum</summary>
 public enum Modifier
 {
     /// <summary>Waek attack</summary>
